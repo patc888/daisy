@@ -1,0 +1,15 @@
+#!/bin/bash -x
+curl -X POST https://qepzpacshi.execute-api.us-west-2.amazonaws.com/dev/products \
+    -H "Content-Type: application/json" \
+    -H "x-api-key: AKIAWL3WNBH2T34NMWLZY" \
+    --data '
+{
+    "id": "prod-12345",
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with adjustable DPI.",
+    "price": 25.99,
+    "tags": ["electronics", "accessories", "wireless"],
+    "stock": 120,
+    "category": "Peripherals"
+}
+    '
